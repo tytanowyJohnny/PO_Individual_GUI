@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.serverOptionsController">
+   <children>
+      <Label layoutX="66.0" layoutY="46.0" text="Choose what you would like to do:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="mathButton" layoutX="88.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleMathButton" text="Math exercise" />
+
+      <Button fx:id="stringButton" layoutX="69.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleStringButton" text="Change words in text" />
+
+      <Label layoutX="226.0" layoutY="97.0" prefHeight="50.0" prefWidth="316.0" text="See result of addition, substract, multiply and divide for 2 given numbers." wrapText="true" />
+      <Label layoutX="226.0" layoutY="161.0" prefHeight="38.0" prefWidth="316.0" text="Change all occurences of given word in a given text." wrapText="true" />
+
+      <Button fx:id="exitButton" layoutX="248.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="27.0" prefWidth="74.0" text="Exit" />
+   </children>
+</AnchorPane>

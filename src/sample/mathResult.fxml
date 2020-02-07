@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="221.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mathResultController">
+   <children>
+      <Label layoutX="30.0" layoutY="25.0" text="Server response:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="73.0" text="Addition:" />
+      <Label layoutX="54.0" layoutY="102.0" text="Substraction:" />
+      <Label layoutX="54.0" layoutY="130.0" text="Multiplication:" />
+      <Label layoutX="54.0" layoutY="158.0" text="Division:" />
+      <Label fx:id="addLabel" layoutX="153.0" layoutY="73.0" text="Label" />
+      <Label fx:id="minusLabel" layoutX="153.0" layoutY="102.0" text="Label" />
+      <Label fx:id="multiplyLabel" layoutX="153.0" layoutY="130.0" text="Label" />
+      <Label fx:id="substractLabel" layoutX="153.0" layoutY="158.0" text="Label" />
+      <Button fx:id="buttonOK" onAction="#handleOkButton" layoutX="253.0" layoutY="175.0" mnemonicParsing="false" text="OK" />
+   </children>
+</AnchorPane>

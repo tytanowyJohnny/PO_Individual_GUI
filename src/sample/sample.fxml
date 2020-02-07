@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="374.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="70.0" layoutY="27.0" text="TCP, Threads &amp; JDBC Sample">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="70.0" layoutY="80.0" text="by Bartosz Kubacki" />
+      <Button fx:id="readFromFileButton" layoutX="70.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleReadFromFileButton" text="Read from text file" />
+
+      <Button fx:id="serverButton" onAction="#handleServerButton" layoutX="70.0" layoutY="188.0" mnemonicParsing="false" text="Send job to server" />
+      <Label layoutX="207.0" layoutY="140.0" text="Read contents of text file line-by-line using more than just 1 thread." />
+
+      <Label layoutX="207.0" layoutY="192.0" text="Send request to perform action at server side and receive response." />
+      <Button fx:id="sqlButton" onAction="#handleSQLButton" layoutX="76.0" layoutY="240.0" mnemonicParsing="false" text="Make SQL query" />
+
+      <Label layoutX="207.0" layoutY="244.0" text="Connect to local database &amp; pass SQL query." />
+      <Button fx:id="exitButton" onAction="#handleExitButton" layoutX="259.0" layoutY="311.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="84.0" text="Exit" />
+   </children>
+</AnchorPane>
